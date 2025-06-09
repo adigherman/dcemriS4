@@ -32,7 +32,7 @@
 
 
 
-/******************************/
+/ ******************************/
 /* Global Variables			  */
 /******************************/
 //int printerlevel = 0;
@@ -635,8 +635,8 @@ void dce_space_2comp(
 
 	 int nriters=NRI[0];
 	 int tuning=NRI[2];
-	 double zaehler=0;
-	 int x,y,z;
+	 //double zaehler=0;
+	 //int x,y,z;
 	 double help;
 
 /*	 printf("Starting values parameter: \n");
@@ -674,16 +674,17 @@ void dce_space_2comp(
 	   
 	 //Rprint("%i pixels to analyse.\n",N1);
 	 
-	 int newvalue=0;
+	 //int newvalue=0;
 
 	 /************************************/
 	 /* MCMC iterations                  */
 	 /************************************/
 
-	 Rprintf("Starting iterations.\n",0);
+	 //Rprintf("Starting iterations.\n",0);
+	 Rprintf("Starting iterations.\n");
 	 double temp;
 	 int respace_tune=0;
-	 int sign=0;
+	 //int sign=0;
 	 for (int iter=1;iter<=nriters;iter++)
 	 {
 	   	   if (tuning>0)
@@ -843,7 +844,7 @@ void dce_space_2comp(
 		// tuning and acceptance rates
 		if (iter==tuning && respace_tune!=respace_tunecycles )
 		{
-			int count1 = 0;
+			//int count1 = 0;
 			int count2 = 0;
 			int count3 = 0;
 			int count4 = 0;

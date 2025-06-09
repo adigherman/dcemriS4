@@ -76,4 +76,4 @@
 #' 
 #' @import methods
 #' @import oro.nifti
-NULL
+"_PACKAGE"

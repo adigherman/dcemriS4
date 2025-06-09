@@ -272,7 +272,7 @@ void dce_bayes_run_single(int* NRI, double* conc, double* tau_gamma,
   int acc_gamma = 0;
   int acc_theta = 0;
   int acc_eta = 0;
-  int dev;
+  // int dev;
   // iter = 0;
 
   while (iter < NRI[0]) { 

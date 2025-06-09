@@ -40,6 +40,10 @@
 //#include "mxs.h"
 #include "baymri.h"
 
+#ifndef PI
+#define PI 3.14159265358979323846
+#endif
+
 /******************************/
 /* Global Variables			  */
 /******************************/
@@ -823,12 +827,12 @@ void dce_space(int* NRI,
 	 // int burnin=NRI[1] nicht nötig
 	 int tuning=NRI[2];
 
-	 double zaehler=0;
+	 //double zaehler=0;
 
 //	 printf("aifsettings model %f, a1 %f, m1 %f, a2 %f, m2 %f \n", aif_settings[0], aif_settings[1], aif_settings[2], aif_settings[3], aif_settings[4]);
 
-	 double help;
-	 int x,y,z;
+	 //double help;
+	 //int x,y,z;
 	 
 	 N1=0;
 	 for (int x=1 ; x<=X  ; x++)
@@ -844,7 +848,7 @@ void dce_space(int* NRI,
 	   
 	 //Rprint("%i pixels to analyse.\n",N1);
 	 
-	 int newvalue=0;
+	 //int newvalue=0;
    
 	 /************************************/
 	 /* MCMC iterations                  */
@@ -852,7 +856,7 @@ void dce_space(int* NRI,
 	 //Rprintf("Starting iterations.\n",0);
 	 double temp;
 	 int respace_tune=0;
-	 int sign=0;
+	 //int sign=0;
 	 for (int iter=1;iter<=nriters;iter++)
 	 {
 	   if (tuning>0)
@@ -994,7 +998,7 @@ void dce_space(int* NRI,
 		 // tuning and acceptance rates
 		 if (iter==tuning && respace_tune!=respace_tunecycles )
 			 {
-			   int count1 = 0;
+			   //int count1 = 0;
 			   int count2 = 0;
 			   int count3 = 0;
 			   int count4 = 0;
